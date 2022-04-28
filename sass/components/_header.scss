@@ -1,4 +1,3 @@
 .gooter {
-    color: map-get($map: colors, $key: background-icons);
-    background-color: get-Color(blue-brand);
+    background-color: getColor(#blue-brand);
 }

@@ -1,0 +1,10 @@
+$colors: (
+    'blue-brand': #2196F3,
+    'background-icons': #F5F4FA,
+    'phone-color': #757575,
+    'media-icon-color': #AFB1B8,
+    'white': #FFFFFF,
+);
+@function getColor($key) {
+    @return map-get($colors, $key)
+}
