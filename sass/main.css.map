@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,0BAA0B;EACjC,gBAAgB,EAAE,qBAAqB;CAC1C",
+    "sources": [
+        "main.scss",
+        "components/_header.scss",
+        "components/_footer.scss",
+        "colors/_colors-library.scss",
+        "components/_buttons-gallery.scss",
+        "components/_clients.scss",
+        "components/_lorem-ipsum.scss",
+        "components/_menu.scss",
+        "components/_modal.scss",
+        "components/_offer-gallery.scss",
+        "components/_photo-gallery.scss",
+        "components/_workers.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
