@@ -1,11 +1,12 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAE,qBAAqB;CAC1C",
+    "mappings": "AEAA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,MAAM;EAClB,eAAe,EAAE,MAAM;EACvB,cAAc,EAAE,MAAM;CACzB",
     "sources": [
         "main.scss",
+        "colors/_colors-library.scss",
+        "components/_block-menu.scss",
         "components/_header.scss",
         "components/_footer.scss",
-        "components/_colors-library.scss",
         "components/_buttons-gallery.scss",
         "components/_clients.scss",
         "components/_lorem-ipsum.scss",
