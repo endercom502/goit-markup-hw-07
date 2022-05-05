@@ -10,37 +10,41 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/nomalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>WebStudio</title>
     <meta charset="utf-8">
 </head>
-<header class="container-1200">
-    <a href="/index.html" class="logo a-link"><span class="blue">Web</span><span>Studio</span></a>
+<header class="menu-container">
+    <a href="/index.html" class="header-footer__logo menu-container__link"><span
+            class="header-footer__blue">Web</span><span>Studio</span></a>
 
-    <nav class="flex-element">
-        <ul class="menu-500 ul-style">
-            <li><a href="index.html" class="a-link">Agencja</a></li>
-            <li><a href="portfolio.html" class="a-link"><span class="club">Portfolio</span></a></li>
-            <li><a href="" class="a-link">Kontakt</a></li>
+    <nav class="menu-container__nav">
+        <ul class="menu-container__ul menu-container__ul--style">
+            <li><a href="index.html" class="menu-container__link"><span class="menu-container__span">Agencja</span></a>
+            </li>
+            <li><a href="portfolio.html" class="menu-container__link"><span>Portfolio</span></a></li>
+            <li><a href="" class="menu-container__link">Kontakt</a></li>
         </ul>
     </nav>
-    <ul class="menu-500 ul-style-2">
-        <li class="a-link">
-            <a href="mailto:info@devstudio.com" class="icons-contact a-link">
+    <ul class="menu-container__ul menu-container__ul--style2">
+        <li class="menu-container__link">
+            <a href="mailto:info@devstudio.com" class="menu-container__link">
                 <svg width="16px" height="16px">
                     <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
                 <span>info@devstudio.com</span>
             </a>
         </li>
-      
-        <li class="a-link grafit">
-            <a href="tel:+48111111111" class="grafit a-link">
-            <svg width="16" height="16" x="0" y="0">
-            <use href="./images/icons.svg#icon-mobile"></use>
-            </svg>
-            <span>+48 111 111 111</span>
-             </a></li>
+
+        <li class="menu-container__link menu-container__tel">
+            <a href="tel:+48111111111" class="menu-container__tel menu-container__link">
+                <svg width="16" height="16" x="0" y="0">
+                    <use href="./images/icons.svg#icon-mobile"></use>
+                </svg>
+                <span>+48 111 111 111</span>
+            </a>
+        </li>
     </ul>
 </header>
 <main>

@@ -71,7 +71,7 @@ body {
   margin-bottom: 0px;
 }
 
-.menu-container .menu-container__nav {
+.menu-container__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +83,7 @@ body {
       align-self: baseline;
 }
 
-.menu-container .menu-container__ul {
+.menu-container__ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -93,7 +93,7 @@ body {
   list-style: none;
 }
 
-.menu-container .menu-container__ul--style {
+.menu-container__ul--style {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +110,7 @@ body {
   margin-top: 32px;
 }
 
-.menu-container .menu-container__ul--style2 {
+.menu-container__ul--style2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +127,7 @@ body {
   margin-top: 0px;
 }
 
-.menu-container .menu-container__link {
+.menu-container__link {
   color: #212121;
   padding: 0;
   -webkit-transition-property: cursor, fill, color;
@@ -138,27 +138,27 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-container .menu-container__link:hover {
+.menu-container__link:hover {
   cursor: pointer;
   color: #2196F3;
   fill: #2196F3;
 }
 
-.menu-container .menu-container__link:link {
+.menu-container__link:link {
   -webkit-text-decoration: #2196F3;
           text-decoration: #2196F3;
 }
 
-.menu-container .menu-container__link:active {
+.menu-container__link:active {
   color: #2196F3;
 }
 
-.menu-container .menu-container__span {
+.menu-container__span {
   padding: 0;
   margin: 0;
 }
 
-.menu-container .menu-container__span::after {
+.menu-container__span::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,24 +171,23 @@ body {
   margin: 0;
 }
 
-.menu-container .menu-container__tel {
+.menu-container__tel {
   color: #757575;
   fill: #757575;
   padding-left: 5px;
 }
 
-.menu-container .header-footer__logo {
+.header-footer__logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  color: #2196F3;
   font-family: "Releway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
 
-.menu-container .header-footer__blue {
+.header-footer__blue {
   color: #2196F3;
 }
 

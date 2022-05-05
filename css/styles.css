@@ -1,50 +1,4 @@
-figure {
-  padding: 0;
-  margin: 0;
-}
-ul {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-  padding-inline-start: 0;
-}
-input, textarea {
-  all: unset;
-}
-body {
-  font-family: "Roboto";
-  font-weight: 700;
-  color: #212121;
-  font-size: 14px;
-}
-main {
-  display: flex;
-  flex-direction: column;
-}
-::selection {
-  color: #fff;
-  background-color: #2196f3;
-}
-.club {
-  padding: 0;
-  margin: 0;
-}
-.club::after {
-  display: flex;
-  content: " ";
-  border-bottom: 4px solid #2196F3;
-  padding-top: 28px;
-  width: 53px;
-  justify-content: space-around;
-  margin: 0;
-}
+
 .flex-gallery {
   display: flex;
   list-style: none;
@@ -73,12 +27,6 @@ main {
   animation-name: portfoliochange;
 
 }
-.container {
-  display: flex;
-  flex-basis: 1200px;
-  justify-content: center;
-  flex-direction: column;
-}
 .container-workers {
   display: flex;
   flex-basis: 100%;
@@ -86,18 +34,6 @@ main {
   flex-direction: column;
   background-color: #F5F4FA;
   margin-top: 94px;
-}
-.container-1200 {
-  display: flex;
-  padding-left: 12.5%;
-  padding-right: 12.5%;
-  padding-bottom: 0px;
-  justify-content: space-between;
-  justify-items: center;
-  flex-basis: 33%;
-  border-bottom: solid 1px #ECECEC;
-  align-items: center;
-  margin-bottom: 0px;
 }
 .container-button {
   display: flex;
@@ -121,36 +57,6 @@ main {
   align-items: flex-start;
   justify-content: center;
   list-style: none;
-}
-.ul-style {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 300px;
-  justify-items: center;
-  margin-top: 32px;
-}
-.ul-style-2 {
-  list-style: none;
-  width: 321px;
-  padding-left: 341px;
-  list-style: none;
-}
-.ul-style-2 span {
-  margin-left: 10px;
-}
-.ul-style-2 svg {
-  padding: 0;
-  line-height: 0;
-}
-.ul-style-2 a {
-  display: flex;
-  align-items: center;
-  
-}
-.ul-style-2 > li{
-align-items: center;
 }
 .padding-30 > li {
 padding-right: 30px;
