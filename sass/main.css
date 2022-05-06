@@ -248,4 +248,106 @@ body {
   line-height: 1.6;
   margin-top: 30px;
 }
+
+.container-clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-clients__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-clients__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.container-clients__svg {
+  background-color: #F5F4FA;
+  width: 270px;
+  height: 120px;
+  border: 1px solid transparent;
+  text-align: center;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 94px;
+  border-radius: 4px;
+}
+
+.container-clients__src {
+  margin: 25px 102.34px 25px 102.34px;
+  stroke: #212121;
+  fill: #212121;
+  text-align: center;
+  fill-opacity: 1;
+  stroke-width: 0;
+}
+
+.container-clients__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.container-clients__header {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.container-clients__content {
+  font-size: 14px;
+  color: #757575;
+  font-weight: 400;
+  line-height: 1.71;
+  width: 270px;
+  height: 75px;
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+
+.container-clients__content:last-child {
+  margin-right: 0;
+}
 /*# sourceMappingURL=main.css.map */
