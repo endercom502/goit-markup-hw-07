@@ -21,9 +21,9 @@
 
     <nav class="menu-container__nav">
         <ul class="menu-container__ul menu-container__ul--style">
-            <li><a href="index.html" class="menu-container__link"><span class="menu-container__span">Agencja</span></a>
+            <li><a href="index.html" class="menu-container__link"><span>Agencja</span></a>
             </li>
-            <li><a href="portfolio.html" class="menu-container__link"><span>Portfolio</span></a></li>
+            <li><a href="portfolio.html" class="menu-container__link"><span class="menu-container__span">Portfolio</span></a></li>
             <li><a href="" class="menu-container__link">Kontakt</a></li>
         </ul>
     </nav>
@@ -132,48 +132,60 @@
         </ul>
     </div>
 </main>
-<footer class="footer-black">
-    <div class="footer-div">
+<footer class="footer">
+    <div class="footer__div">
         <div>
-            <a href="/index.html" class="logo white">Web<span>Studio</span></a>
-            <ul class="footer-text">
+            <a href="/index.html"
+                class="header-footer__logo header-footer__blue footer__logo--white">Web<span>Studio</span></a>
+            <ul class="footer__text">
                 <li>
-                    <address class="adres">m. Warszawa, Aleje Jerozolimskie 21</address>
+                    <address class="footer__adres">m. Warszawa, Aleje Jerozolimskie 21</address>
                 </li>
-                <li><a href="mailto:info@devstudio.com" class="adres-second-line a-link">info@devstudio.com</a></li>
-                <li><a href="tel:+48111111111" class="grafit a-link">+48 111 111 111</a></li>
+                <li><a href="mailto:info@devstudio.com"
+                        class="footer__adres-next-line menu-container__link">info@devstudio.com</a></li>
+                <li><a href="tel:+48111111111" class="menu-container__tel menu-container__link">+48 111 111 111</a></li>
             </ul>
         </div>
-        <div class="social-div-1">
-            <h2 class="footer-h">DOŁĄCZ DO NAS</h2>
+        <div class="footer__social-media">
+            <h2 class="footer__h">DOŁĄCZ DO NAS</h2>
             <ul>
-                <li><svg width="44px" height="44px" class="workers-span-1">
-                        <use width="20px" height="20px" class="workers-svg-1" x="12" y="12"
-                            href="./images/icons.svg#icon-instagram"></use>
+                <li><svg width="44px" height="44px" class="footer__svg">
+                        <use width="20px" height="20px" x="12" y="12" href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                 </li>
             </ul>
             <ul>
-                <li><svg width="44px" height="44px" class="workers-span-1">
-                        <use width="20px" height="20px" class="workers-svg-1" x="12" y="12"
-                            href="./images/icons.svg#icon-twitter"></use>
+                <li><svg width="44px" height="44px" class="footer__svg">
+                        <use width="20px" height="20px" x="12" y="12" href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                 </li>
             </ul>
             <ul>
-                <li><svg width="44px" height="44px" class="workers-span-1">
-                        <use width="20px" height="20px" class="workers-svg-1" x="12" y="12"
-                            href="./images/icons.svg#icon-facebook"></use>
+                <li><svg width="44px" height="44px" class="footer__svg">
+                        <use width="20px" height="20px" x="12" y="12" href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                 </li>
             </ul>
             <ul>
-                <li><svg width="44px" height="44px" class="workers-span-1">
-                        <use width="20px" height="20px" class="workers-svg-1" x="12" y="12"
-                            href="./images/icons.svg#icon-linkedin"></use>
+                <li><svg width="44px" height="44px" class="footer__svg">
+                        <use width="20px" height="20px" x="12" y="12" href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                 </li>
             </ul>
+        </div>
+        <div>
+            <form class="footer__form">
+                <label class="footer__label">
+                    ZAPISZ SIĘ DO NEWSLETTERA
+                    <input class="footer__input" type="email" name="e-mail" placeholder="E-mail" />
+                </label>
+                <button type="submit" class="footer__button">
+                    <span class="footer__span">Zapisz się</span>
+                    <svg width="24" height="24">
+                        <use href="./images/icons.svg#icon-plane"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
 </footer>

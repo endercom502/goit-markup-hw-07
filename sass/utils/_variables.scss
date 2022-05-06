@@ -37,6 +37,36 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    color: #757575;
+    font-size: 12px;
+    padding: 0 40px;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+label {
+    display: flex;
+    margin-bottom: 10px;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    transition-property: all;
+    transition-duration: 2500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+label:hover {
+    fill: #2196F3;
+    cursor: pointer;
+}
+label>textarea {
+    max-width: 448px;
+}
+textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
 $colors: (
     'blue-brand': #2196F3,
     'background-icons': #F5F4FA,
