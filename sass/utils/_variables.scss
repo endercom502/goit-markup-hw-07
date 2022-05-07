@@ -87,6 +87,10 @@ $colors: (
     'background-photo-gallery': rgba(47, 48, 58, 0.8),
     'footer-black': #2F303A,
     'border-menu': #ECECEC,
+    'background-shadow2': rgba(255, 255, 255, 0.6),
+    'footer-input': rgba(255, 255, 255, 0.3),
+    'footer-shadow': rgba(0, 0, 0, 0.15),
+    'black-lorem': #212121,
 );
 @function getColor($key) {
     @return map-get($colors, $key)

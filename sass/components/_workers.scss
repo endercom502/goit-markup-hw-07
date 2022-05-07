@@ -3,7 +3,7 @@
     flex-basis: 100%;
     justify-content: center;
     flex-direction: column;
-    background-color: #F5F4FA;
+    background-color: getColor(backgroun-icons);
     margin-top: 94px;
 }
 .container-workers_title {
@@ -21,7 +21,7 @@
     list-style: none;
 }
 .container-workers__figure-ground > li > figure {
-    background-color: #fff;
+    background-color: getColor(white-);
     padding-bottom: 30px;
     margin-bottom: 94px;
 }
@@ -32,10 +32,7 @@
     }
 }
 .container-workers_shadow {
-    box-shadow:
-        0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: getShadow(workers-shadow);
     border-radius: 3px;
 }
 .container-workers__name {
@@ -46,7 +43,7 @@
 }
 .container-workers__position-name {
     font-weight: 400;
-    color: #757575;
+    color: getColor(phone-color);
     line-height: 1.16;
     margin-top: 10px;
 }
@@ -67,16 +64,16 @@
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: #AFB1B8;
-    stroke: #AFB1B8;
+    fill: getColor(media-icon-color);
+    stroke: getColor(media-icon-color);
     transition-property: cursor, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-        background-color: #2196F3;
-        fill: #FFFFFF;
-        stroke: #FFFFFF;
+        background-color: getColor(blue-brand);
+        fill: getColor(white-);
+        stroke: getColor(white-);
         cursor: pointer;
     }
 }

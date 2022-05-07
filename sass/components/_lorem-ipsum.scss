@@ -21,7 +21,7 @@
 }
 
 .container-offer__svg {
-    background-color: #F5F4FA;
+    background-color: getColor(backgroun-icons);
     width: 270px;
     height: 120px;
     border: 1px solid transparent;
@@ -34,8 +34,8 @@
 
 .container-offer__src {
     margin: 25px 102.34px 25px 102.34px;
-    stroke: #212121;
-    fill: #212121;
+    stroke: getColor(black-lorem);
+    fill: getColor(black-lorem);
     text-align: center;
     fill-opacity: 1;
     stroke-width: 0;
@@ -55,7 +55,7 @@
 
 .container-offer__content {
     font-size: 14px;
-    color: #757575;
+    color: getColor(phone-color);
     font-weight: 400;
     line-height: 1.71;
     width: 270px;

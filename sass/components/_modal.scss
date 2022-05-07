@@ -29,7 +29,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: #FFFFFF;
+    background-color: getColor(white-);
     transform: translate(-50%, -50%);
 }
 
@@ -39,7 +39,7 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    background-color: #FFFFFF;
+    background-color: getColor(white-);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
@@ -75,10 +75,10 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-        border-color: #2196F3;
+        border-color: getColor(blue-brand);
         box-shadow: none;
         cursor: pointer;
-        fill: #2196F3;
+        fill: getColor(blue-brand);
         cursor: pointer;
     }
 }
@@ -99,18 +99,18 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-        border: 1px solid #2196F3;
+        border: 1px solid getColor(blue-brand);
     }
     &:focus {
-        border: 1px solid #2196F3;
+        border: 1px solid getColor(blue-brand);
     }
 }
 .modal__checkbox-input {
     position: absolute;
     width: 15px;
     height: 14px;
-    background-color: #FFFFFF;
-    border: 1px solid #212121;
+    background-color: getColor(white-);
+    border: 1px solid getColor(black-lorem);
     box-sizing: border-box;
     border-radius: 2px;
     margin-left: 15px;
@@ -139,27 +139,27 @@
     justify-content: center;
     font-size: 14px;
     font-weight: 400;
-    color: #757575;
+    color: getColor(phone-color);
     z-index: 0;
     transition-property: all;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         & > a {
-            color: #2196F3;
+            color: getColor(blue-brand);
             text-decoration: underline;
     }
 
     &:hover input~.modal__checkbox-svg {
-        background-color: #2196f3;
-        border-color: #2196f3;
-        stroke: #fff;
+        background-color: getColor(blue-brand);
+        border-color: getColor(blue-brand);
+        stroke: getColor(white-);
         opacity: 1;
         cursor: pointer;
     }
     &  input:checked~.modal__checkbox-svg {
-        background-color: #2196f3;
-        border-color: #2196f3;
-        stroke: #fff;
+        background-color: getColor(blue-brand);
+        border-color: getColor(blue-brand);
+        stroke: getColor(white-);
         opacity: 1;
     }
 }
@@ -167,11 +167,11 @@
     padding-left: 37px;
 }
 .modal__button {
-    background-color: #2196f3;
-    color: #fff;
+    background-color: getColor(blue-brand);
+    color: getColor(white-);
     height: 50px;
     width: 200px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px 0px getColor(footer-shadow);
     letter-spacing: 0.96px;
     font-size: 16px;
     font-family: "Roboto";
@@ -179,5 +179,5 @@
     line-height: 1.6;
     margin-top: 2px;
     margin-left: 124px;
-    border: 1px solid #2196f3;
+    border: 1px solid getColor(blue-brand);
 }

@@ -28,7 +28,7 @@
 width: 172px;
     height: 92px;
     margin-right: 30px;
-    border: solid 1px #AFB1B8;
+    border: solid 1px getColor(media-icon-color);
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 94px;
@@ -37,7 +37,7 @@ width: 172px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
-        border: solid 1px #2196F3;
+        border: solid 1px getColor(blue-brand);
         cursor: pointer;
     }
     &:last-child {
@@ -47,10 +47,10 @@ width: 172px;
 .container-clients__graphics {
     width: 106px;
     height: 60.04px;
-    fill: #AFB1B8;
+    fill: getColor(media-icon-color);
     margin: 17.71px 32px 14.25px;
     text-align: center;
-    stroke: #AFB1B8;
+    stroke: getColor(media-icon-color);
     fill-opacity: 1;
     stroke-width: 0;
     transition-property: fill, cursor, border, fill-opacity,
@@ -59,8 +59,8 @@ width: 172px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
     &:hover {
-        fill: #2196F3;
-        border: 1px solid #2196F3;
+        fill: getColor(blue-brand);
+        border: 1px solid getColor(blue-brand);
         fill-opacity: 1;
         stroke-width: 0;
         cursor: pointer;

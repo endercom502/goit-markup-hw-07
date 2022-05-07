@@ -39,7 +39,7 @@
         height: 294px;
         background-color: rgba(33, 150, 243, 0.9);
         z-index: 1;
-        color: #FFFFFF;
+        color: getColor(white-);
         padding: 49px 45px 49px 24px;
         font-size: 18px;
         line-height: 28px;
@@ -68,7 +68,7 @@
 
     & p {
         font-weight: 400;
-        color: #757575;
+        color: getColor(phone-color);
         line-height: 2;
     }
 }
