@@ -12,7 +12,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .modal__is-hidden {
+    & is-hidden {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -114,20 +114,21 @@ height: 120px;
         color: #2196F3;
         text-decoration: underline;
     }
-}
-    .modal__checkbox:hover input ~ .checkbox__svg {
+
+    .&:hover input ~ .checkbox__svg {
         background-color: #2196f3;
         border-color: #2196f3;
         stroke: #fff;
         opacity: 1;
         cursor: pointer;
     }
-    .modal_checkbox input:checked ~ .checkbox__svg {
+    & input:checked ~ .checkbox__svg {
         background-color: #2196f3;
         border-color: #2196f3;
         stroke: #fff;
         opacity: 1;
     }
+}
 .modal__checkbox-input {
     position: absolute;
     width: 15px;
