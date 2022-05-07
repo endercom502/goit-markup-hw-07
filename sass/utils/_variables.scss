@@ -56,16 +56,26 @@ label {
     transition-property: all;
     transition-duration: 2500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-label:hover {
+
+&:hover {
     fill: #2196F3;
     cursor: pointer;
+}
 }
 label>textarea {
     max-width: 448px;
 }
 textarea::placeholder {
     color: rgba(117, 117, 117, 0.5);
+}
+@keyframes portfoliochange {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 }
 $colors: (
     'blue-brand': #2196F3,

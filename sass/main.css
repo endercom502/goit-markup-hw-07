@@ -1,3 +1,4 @@
+@charset "UTF-8";
 figure {
   padding: 0;
   margin: 0;
@@ -113,6 +114,28 @@ textarea::-ms-input-placeholder {
 
 textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
+}
+
+@-webkit-keyframes portfoliochange {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes portfoliochange {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .menu-container {
@@ -331,7 +354,7 @@ textarea::placeholder {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__backdrop .modal__is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -388,8 +411,8 @@ textarea::placeholder {
   position: relative;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -407,8 +430,8 @@ textarea::placeholder {
        tab-size: 0;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -439,8 +462,53 @@ textarea::placeholder {
   padding-left: 16px;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__textarea:hover {
+  border: 1px solid #2196F3;
+}
+
+.modal__textarea:focus {
+  border: 1px solid #2196F3;
+}
+
+.modal__checkbox-input {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  background-color: #FFFFFF;
+  border: 1px solid #212121;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  margin-left: 15px;
+  z-index: 1;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__checkbox-svg {
+  position: absolute;
+  width: 15px;
+  height: 14px;
+  left: 15px;
+  top: 0px;
+  z-index: 2;
+  border-radius: 2px;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -461,8 +529,8 @@ textarea::placeholder {
   z-index: 0;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -472,7 +540,7 @@ textarea::placeholder {
   text-decoration: underline;
 }
 
-.modal__checkbox:hover input ~ .checkbox__svg {
+.modal__checkbox:hover input ~ .modal__checkbox-svg {
   background-color: #2196f3;
   border-color: #2196f3;
   stroke: #fff;
@@ -480,48 +548,11 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.modal_checkbox input:checked ~ .checkbox__svg {
+.modal__checkbox input:checked ~ .modal__checkbox-svg {
   background-color: #2196f3;
   border-color: #2196f3;
   stroke: #fff;
   opacity: 1;
-}
-
-.modal__checkbox-input {
-  position: absolute;
-  width: 15px;
-  height: 14px;
-  background-color: #FFFFFF;
-  border: 1px solid #212121;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 2px;
-  margin-left: 15px;
-  z-index: 1;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__checkbox-svg {
-  position: absolute;
-  width: 15px;
-  height: 14px;
-  left: 15px;
-  top: 0px;
-  z-index: 2;
-  border-radius: 2px;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 2500ms;
-          transition-duration: 2500ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__checkbox-span {
@@ -710,6 +741,52 @@ textarea::placeholder {
   margin-right: 0;
 }
 
+.container-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 36px;
+}
+
+.container-button__button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #f5f4fa;
+  border: #fff;
+  line-height: 1.62;
+  margin-right: 8px;
+  -webkit-transition-property: cursor, border-radius, text-align, background-color, color, border, line-height, margin-left, -webkit-box-shadow;
+  transition-property: cursor, border-radius, text-align, background-color, color, border, line-height, margin-left, -webkit-box-shadow;
+  transition-property: box-shadow, cursor, border-radius, text-align, background-color, color, border, line-height, margin-left;
+  transition-property: box-shadow, cursor, border-radius, text-align, background-color, color, border, line-height, margin-left, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container-button__button:hover {
+  border-radius: 4px;
+  text-align: center;
+  background-color: #2196f3;
+  color: white;
+  border: #fff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  line-height: 1.62;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
 .container-clients {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -819,6 +896,112 @@ textarea::placeholder {
 
 .container-clients__graphics:nth-child(2n+1) {
   margin: 16px 32px;
+}
+
+.photo-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.photo-gallery__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 1200px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.photo-gallery__li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.photo-gallery__photo {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  -webkit-transition-property: cursor, -webkit-box-shadow, -webkit-transform;
+  transition-property: cursor, -webkit-box-shadow, -webkit-transform;
+  transition-property: box-shadow, cursor, transform;
+  transition-property: box-shadow, cursor, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.photo-gallery__photo:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.photo-gallery__photo:nth-child(1n+7) {
+  margin-bottom: 94px;
+}
+
+.photo-gallery__photo:hover {
+  -webkit-box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  -webkit-animation-name: portfoliochange;
+          animation-name: portfoliochange;
+}
+
+.photo-gallery__animation {
+  position: relative;
+  z-index: 0;
+}
+
+.photo-gallery__animation:hover::before {
+  content: "Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji";
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  z-index: 1;
+  color: #FFFFFF;
+  padding: 49px 45px 49px 24px;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  -webkit-animation-name: portfoliochange;
+          animation-name: portfoliochange;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  position: absolute;
+  top: 0px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  overflow: hidden;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.photo-gallery__figcaption {
+  font-size: 18px;
+  line-height: 2;
+  padding-left: 24px;
+  padding-right: 23px;
+  border-bottom: solid 1px #EEEEEE;
+  border-right: solid 1px #EEEEEE;
+  border-left: solid 1px #EEEEEE;
+  border-top: 0px;
+  position: relative;
+  z-index: 3;
+}
+
+.photo-gallery__figcaption p {
+  font-weight: 400;
+  color: #757575;
+  line-height: 2;
 }
 
 .container-workers {

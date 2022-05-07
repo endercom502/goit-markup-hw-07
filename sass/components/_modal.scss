@@ -12,15 +12,16 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    & is-hidden {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition-property: all;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transform: translate(50%, 50%);
-    }
+    
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(50%, 50%);
 }
 .modal__main {
     width: 528px;
@@ -59,7 +60,7 @@
     width: 448px;
     position: relative;
     transition-property: all;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__form {
@@ -71,7 +72,7 @@
     padding-left: 42px;
     tab-size: 0;
     transition-property: all;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
         border-color: #2196F3;
@@ -87,7 +88,7 @@
     top: 33px;
 }
 .modal__textarea {
-height: 120px;
+    height: 120px;
     margin-top: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -95,38 +96,13 @@ height: 120px;
     padding-top: 12px;
     padding-left: 16px;
     transition-property: all;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__checkbox {
-    position: relative;
-    display: inline-block;
-    flex-direction: row-reverse;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: 400;
-    color: #757575;
-    z-index: 0;
-    transition-property: all;
-    transition-duration: 2500ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    & > a {
-        color: #2196F3;
-        text-decoration: underline;
+    &:hover {
+        border: 1px solid #2196F3;
     }
-
-    .&:hover input ~ .checkbox__svg {
-        background-color: #2196f3;
-        border-color: #2196f3;
-        stroke: #fff;
-        opacity: 1;
-        cursor: pointer;
-    }
-    & input:checked ~ .checkbox__svg {
-        background-color: #2196f3;
-        border-color: #2196f3;
-        stroke: #fff;
-        opacity: 1;
+    &:focus {
+        border: 1px solid #2196F3;
     }
 }
 .modal__checkbox-input {
@@ -140,11 +116,11 @@ height: 120px;
     margin-left: 15px;
     z-index: 1;
     transition-property: all;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__checkbox-svg {
-position: absolute;
+    position: absolute;
     width: 15px;
     height: 14px;
     left: 15px;
@@ -153,8 +129,39 @@ position: absolute;
     border-radius: 2px;
     transform: translate(-0%, -0%);
     transition-property: all;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__checkbox {
+    position: relative;
+    display: inline-block;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #757575;
+    z-index: 0;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        & > a {
+            color: #2196F3;
+            text-decoration: underline;
+    }
+
+    &:hover input~.modal__checkbox-svg {
+        background-color: #2196f3;
+        border-color: #2196f3;
+        stroke: #fff;
+        opacity: 1;
+        cursor: pointer;
+    }
+    &  input:checked~.modal__checkbox-svg {
+        background-color: #2196f3;
+        border-color: #2196f3;
+        stroke: #fff;
+        opacity: 1;
+    }
 }
 .modal__checkbox-span {
     padding-left: 37px;
