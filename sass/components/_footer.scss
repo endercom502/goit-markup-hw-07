@@ -6,15 +6,20 @@
     font-weight: 400;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    padding-left: 171px;
+    align-items: center;
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 1600px;
+    width: auto;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    flex-basis: 100%;
 }
 .footer__div {
     display: inline-flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-basis: 100%;
 }
 .footer__logo--white > span {
     color: getColor(white-);
